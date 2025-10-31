@@ -89,7 +89,7 @@ void convolute(Image* srcImage,Image* destImage,Matrix algorithm){
     ThreadData* args=(ThreadData*)malloc(sizeof(ThreadData)*nthreads);
     int rows_per=srcImage->height/nthreads;
     int rem=srcImage->height%nthreads;
-    int end=0;
+    int start=0;
     for (int i=0;i<nthreads;i++){
         int take =rows_per+(i<rem ? 1:0);
         int end=start+take;
