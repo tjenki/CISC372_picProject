@@ -107,6 +107,7 @@ void convolute(Image* srcImage,Image* destImage,Matrix algorithm){
     }
     free(threads);
     free(args);
+}
 //     int row,pix,bit,span;
 //     span=srcImage->bpp*srcImage->bpp;
 //     for (row=0;row<srcImage->height;row++){
