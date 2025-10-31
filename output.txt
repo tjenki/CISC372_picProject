@@ -1,0 +1,11 @@
+Script started on Fri Oct 31 17:29:49 2025
+]0;tjenkins@r1n06.darwin:~/CISC372_picProject[?1034h[tjenkins@r1n06 CISC372_picProject]$ export OMP_NUM_THREADS=$SL URM_CPUS_PER_TASK
+]0;tjenkins@r1n06.darwin:~/CISC372_picProject[tjenkins@r1n06 CISC372_picProject]$ srun ./image_omp pic1.jpg  edge
+Took 7 seconds
+]0;tjenkins@r1n06.darwin:~/CISC372_picProject[tjenkins@r1n06 CISC372_picProject]$ export THREADS=$SLURM_CPUS _PER_TASK
+]0;tjenkins@r1n06.darwin:~/CISC372_picProject[tjenkins@r1n06 CISC372_picProject]$ srun ./image_pthreads pic1 .jpg edge
+Took 7 seconds
+]0;tjenkins@r1n06.darwin:~/CISC372_picProject[tjenkins@r1n06 CISC372_picProject]$ exit
+exit
+
+Script done on Fri Oct 31 17:30:51 2025
