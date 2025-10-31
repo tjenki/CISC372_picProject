@@ -169,4 +169,4 @@ int main(int argc,char** argv){
     t2=time(NULL);
     printf("Took %ld seconds\n",t2-t1);
    return 0;
-};
+}
